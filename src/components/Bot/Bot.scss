@@ -1,0 +1,125 @@
+
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v48/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+html,
+body {
+margin: 0;
+padding: 0; 
+font-family: "Quicksand", sans-serif;
+letter-spacing: -0.23px;
+}
+.loaderWrapper {
+margin: 80px auto;
+text-align: center;
+}
+.loaderText {
+color: #4870df;
+font-weight: bold;
+}
+.loader,
+.loader::before,
+.loader::after {
+border-radius: 1em;
+width: 1em;
+height: 1em;
+animation-fill-mode: both;
+animation: loading 1.8s infinite ease-in-out;
+}
+.loader {
+margin: auto;
+color: #4870df;
+font-size: 12px;
+position: relative;
+animation-delay: -0.16s;
+}
+.loader::before,
+.loader::after {
+content: "";
+position: absolute;
+top: 0;
+}
+.loader::before {
+left: -1.5em;
+animation-delay: -0.32s;
+}
+.loader::after {
+left: 1.5em;
+}
+@media screen and (max-width: 768px) {
+.botApp {
+  flex-wrap: wrap;
+  padding: 2rem 1rem !important;
+}
+.conversation {
+  flex-basis: 100%;
+  min-width: auto;
+  width: 100%;
+  margin: 0;
+}
+.conversation:first-of-type {
+  margin: 0 0 0 0;
+} 
+}
+@keyframes loading {
+0%,
+80%,
+100% {
+  box-shadow: 0 1em 0 -1.3em;
+}
+40% {
+  box-shadow: 0 1em 0 0;
+}
+}
+
+
+.chatApp{
+height: calc(100vh - 2px);
+  display: flex; 
+  border-radius: 10px;
+}
+
+.botApp {
+  display: flex;
+  align-content: flex-start;
+  justify-content: center;
+  padding: 5rem 20rem;
+  animation: fadeBotApp 0.6s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeBotApp {
+  0% {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

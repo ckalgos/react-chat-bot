@@ -1,0 +1,54 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "outDir": "./lib",
+    "module": "commonjs",
+    "target": "es5",
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "rootDir": "src",
+    "sourceMap": true,
+    "jsx": "react",
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": false,
+    "noImplicitAny": false,
+    "importHelpers": true,
+    "strictNullChecks": false,
+    "noUnusedLocals": false,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "downlevelIteration": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "declaration": true
+  },
+  "include": [
+    "src/*"
+  ],
+  "exclude": [
+    "lib",
+    "node_modules",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "src/setupTests.ts"
+  ],
+  "target": "es5",
+  "lib": [
+    "dom",
+    "dom.iterable",
+    "esnext"
+  ],
+  "externals": {
+    "react": "React",
+    "react-dom": "ReactDOM"
+  },
+}

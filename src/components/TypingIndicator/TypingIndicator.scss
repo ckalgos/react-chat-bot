@@ -1,0 +1,53 @@
+.sendMessage--typing .typing {
+    display: block;
+  }
+  .typing {   
+     padding: 10px;
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .typingDot {
+    position: relative;
+    left: 4px;
+    display: inline-block;
+    width: 2px;
+    height: 2px;
+    background-color: #606060;
+    animation: typingMessage 1.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  .typingDot::before,
+  .typingDot::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 2px;
+    height: 2px;
+    background-color: #606060;
+    animation: typingMessage 1.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+  .typingDot::before {
+    left: 4px;
+    animation-delay: 0.5s;
+  }
+  .typingDot::after {
+    left: 8px;
+    animation-delay: 1s;
+  }
+  
+@keyframes typingMessage {
+  0% {
+    background-color: #606060;
+  }
+  50% {
+    background-color: #fff;
+  }
+  60% {
+    background-color: #606060;
+  }
+}
